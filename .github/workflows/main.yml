@@ -178,7 +178,7 @@ jobs:
           - x86_64
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
 
       - name: Check downloads
         run: |
@@ -209,7 +209,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
 
       - name: Upload Release Asset
         id: upload-release-asset
@@ -294,7 +294,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
 
       - name: Upload Release Asset
         id: upload-release-asset
